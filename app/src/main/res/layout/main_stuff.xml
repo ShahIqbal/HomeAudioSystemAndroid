@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:id="@+id/bAddAlbum"
+        android:text="ADD ALBUM"
+        android:onClick="openAddAlbum" />
+
+
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:id="@+id/bAddSongs"
+        android:layout_gravity="center"
+        android:text="ADD SONGS"
+        android:onClick="openAddSongs" />
+
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:id="@+id/bMakePlaylist"
+        android:layout_gravity="center"
+        android:text="MAKE PLAYLIST"
+        android:onClick="openMakePlaylist" />
+
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:id="@+id/bSelectPlayList"
+        android:layout_gravity="center"
+        android:text="ADD SONGS TO PLAYLIST"
+        android:onClick="openSongToPlaylist" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:id="@+id/bAddRoom"
+        android:text="ADD ROOMS"
+        android:onClick="openAddRoom" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:text="PLAY PLAYLIST"
+        android:onClick="openPlayPlaylist" />
+
+
+</LinearLayout>

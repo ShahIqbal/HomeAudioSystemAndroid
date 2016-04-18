@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.shahiqbal.homeaudiosystem.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Add Artist First"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/etAddArtist" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bArtist"
+        android:text="ADD ARTIST"
+        android:onClick="addArtistStuff"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Add Album Name!"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/etAlbumName" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Add Album Genre"
+        android:layout_marginBottom="10dp"
+        android:inputType="text"
+        android:id="@+id/etAddGenre" />
+
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Add Position of Album in Library"
+        android:id="@+id/etAlbumPosition"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Add number of songs in Album"
+        android:id="@+id/etAlbumSongs"/>
+
+    <Spinner
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="end"
+        android:id="@+id/artistspinner"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Enter date for album. Click here!"
+        android:layout_gravity="end"
+        android:id="@+id/tvAlbumDate"
+        android:onClick="showDatePickerDialog"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bAddAlbum"
+        android:text="ADD ALBUM"
+        android:onClick="saveData"/>
+
+    <!--
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bAddSongs"
+        android:text="GO TO ADD SONG"
+        android:onClick="goToAddSongs"/>
+
+        -->
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bSong"
+        android:text="GO TO ADD SONGS"
+        android:onClick="goToAddSongs"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bMainMenu"
+        android:text="GO TO MAIN MENU"
+        android:onClick="goToMainMenu"/>
+
+
+
+
+
+
+</LinearLayout>
+</ScrollView>
